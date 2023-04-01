@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+<body>
+        <!--border được dùng để định dạng đường viền cho thành phần-->
+        <h1>KẾT QUẢ HỌC TẬP</h1>
+        <!--border-collapse : xác định đường viền của table có tách biệt ra hay không.-->
+        <!--border-collapse : collapse : khoảng trống giữa các đường viền (border) của table bị loại bỏ, chỉ còn đường viền duy nhất.-->
+        <table border="1" style="border-collapse: collapse;">
+                <!--tr là hàng-->
+                <!--td là cột-->
+                <tr style="background-color: green;">
+                        <!-- rowspan : dùng để gộp hai ô lại với nhau-->
+                        <td rowspan="2">Họ và tên học sinh</td>
+
+                        <!-- colspan : dùng để trộn các ô lại với nhau trên cùng một hàng-->
+                        <td colspan="2">Năm sinh</td>
+                        <td rowspan="2">Điểm trung bình</td>
+                        <td rowspan="2">Xếp loại</td>
+                </tr> 
+
+                <tr style="background-color: green;">
+                        <td>Nam</td>
+                        <td>Nữ</td>
+                </tr> 
+
+                <tr>
+                        <td>Lê Thanh Xuân</td>
+                        <td></td>
+                        <td>1950</td>
+                        <td>8.5</td>
+                        <td>Giỏi</td>
+                </tr>
+
+                <tr>
+                        <td>Phan Thế Hạ</td>
+                        <td>1985</td>
+                        <td></td>
+                        <td>6.5</td>
+                        <td>Khá</td>
+                </tr> 
+
+                <tr>
+                        <td>Trần Hoài Thu</td>
+                        <td></td>
+                        <td>1986</td>
+                        <td>9.5</td>
+                        <td>Xuất sắc</td>
+                </tr> 
+
+                <tr>
+                        <td>Trương Lưu Đông</td>
+                        <td>1984</td>
+                        <td></td>
+                        <td>6.0</td>
+                        <td>Trung bình</td>
+                </tr> 
+
+                <tr>
+                        <td>Lưu Thế Hạc</td>
+                        <td>1985</td>
+                        <td></td>
+                        <td>4.5</td>
+                        <td>Kém</td>
+                </tr> 
+
+                <tr style="background-color: green;">
+                        <td colspan="3">Tổng số học sinh đạt</td>
+                        <td colspan="2">4 học sinh</td>
+                </tr> 
+        </table>
+</body>
+</html>
