@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+    <title>Thanh toán</title>
+    <link rel="stylesheet" href="style.css">
+	<style>
+body {
+  font-family: "Helvetica Neue", sans-serif;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+form {
+  display: grid;
+  grid-gap: 20px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05), 0 16px 24px rgba(0, 0, 0, 0.1);
+}
+header {
+  background-color: #2196f3;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+  width: 100vh;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f3f3f3;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus {
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #2196f3;
+}
+
+label {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+button[type="submit"] {
+  display: inline-block;
+  width: 100%;
+  background-color: #2196f3;
+  color: #fff;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #1976d2;
+}
+
+button[type="submit"]:active {
+  background-color: #1e88e5;
+}
+
+	</style>
+  </head>
+  <body>
+    <header>
+      <h1>Thanh toán</h1>
+    </header>
+    <main>
+      <form>
+        <h2>Thông tin giao hàng</h2>
+        <label for="name">Họ tên</label>
+        <input type="text" id="name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+        <label for="phone">Điện thoại</label>
+        <input type="tel" id="phone" required>
+        <label for="address">Địa chỉ</label>
+        <input type="text" id="address" required>
+		
+        <button type="submit">Thanh toán</button>
+      </form>
+    </main>
+  </body>
+</html>

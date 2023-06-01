@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+<head>
+	<script type="text/javascript">
+	</script>
+		
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Chi tiết sản phẩm - PC store</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+			<img src="imgs/logo_LOGO DANN-RW-white.png" style="width: 200px; padding: 20px;" />
+            <nav>
+                <ul id="menuItems">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="#">Về trang web</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="#">Tài khoản</a></li>   
+                </ul>
+            </nav>
+            <a href="cart3.html"><img src="imgs/shopping-cart.png" width="30px" height="30px" id="cart"><span id="cart-size">0</span></a>
+            <img src="imgs/—Pngtree—menu vector icon_4236988.png" class="menu-icon" width="30px" height="30px" onclick="menutoggle()">
+    </div>
+        </div>   
+	<p style="text-align: center;font-size: 40px; font-weight: 20px; color: blue">LINH KIỆN ĐIỆN TỬ</p>
+    </div>
+    <!-- Thông tin từng sản phẩm -->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="imgs/Loa.png" width="100%" id="productImg">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="imgs/Loa1.png"width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="imgs/Loa2.png"width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="imgs/Loa.png" width="100%" class="small-img">
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="col-2">
+                <p>Trang chủ / LOA </p>
+              <h1 class="product-name" style="font-size: 30px">Phân Tần Loa 3 Kênh 150W Âm Trầm</h1>
+                <h4 class="product-price">Giá: 159.000đ </h4>
+              <p style="font-size: 20px;">Số lượng:  <input type="number" value="1" max="10"></p>
+               
+                <ul id="product-list">
+  					<li><button onclick="addToCart('loa')" class="button">Thêm vào giỏ hàng</button></li>
+				</ul>
+                <h3>Thông tin sản phẩm:</h3>
+                <br>    
+				<p>  - Công suất max: 150W <br>
+					 - Tần số: 48Hz - 20KHz <br>
+					 - Số cổng: 3 ( Bass-Mediant-Treble) <br>
+					 - Sử dụng trở kháng: 4-8ohm <br>
+					 - Đặc điểm lọc: tần số ba chiều cao, trung bình và thấp <br>
+					 - Trọng lượng: 150g <br>
+					 - Kích thước: 9.5x6.5x2.5 cm <br>
+				</p>
+			
+
+            </div>
+    </div>
+    <!-- title -->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2 style="color: red">Sản phẩm liên quan</h2>
+        </div>
+    </div>
+    <!-- Sản phẩm khác -->
+    <div class="small-container">
+        <div class="row">
+			   <div class="col-4">
+                <img src="imgs/LinhkienPi.png" />
+                <h4>[HH] Raspberry Pi 4 Model B 2019 Bản 4G</h4>
+                <div class="rating">
+                  <div class="text" onClick="location.href='SP1.html'">
+                  <button class="fa">Xem ngay</button>
+						</div>
+                </div>
+            </div>
+            
+         
+            <div class="col-4">
+				<br>
+                <img src="imgs/vonhom.png" />
+                <h4>Vỏ Nhôm Tản Nhiệt <br> Raspberry Pi 4 Model B</h4>
+                <div class="rating">
+                <div class="text" onClick="location.href='SP4.html'">
+                  <button class="fa">Xem ngay</button>
+						</div>
+                </div>
+            </div>
+			 <div class="col-4">
+				<br>
+                <img src="imgs/machnap.png" />
+                <h4>Mạch Nạp<br> Pickit 3 Full</h4>
+                <div class="rating">
+                <div class="text" onClick="location.href='SP5.html'">
+                  <button class="fa">Xem ngay</button>
+						</div>
+                </div>
+            </div>
+			<div class="col-4">
+				
+					<img src="imgs/Camera.png"/>
+				
+				 
+				
+                <h4> [HH] Raspberry Pi 4 Model B 2019 Bản 4G</h4>
+                <div class="rating">
+					<div class="text" onClick="location.href='SP2.html'">
+                  <button class="fa">Xem ngay</button>
+						</div>
+                </div>
+               
+            </div>
+        
+        </div>
+    </div>
+    <!-- Js for toggle menu -->
+    <script>
+        var menuItems = document.getElementById("menuItems");
+        menuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if( menuItems.style.maxHeight == "0px"){
+                menuItems.style.maxHeight = "200px";
+            }
+            else{
+                menuItems.style.maxHeight = "0px";
+            }
+        }
+		
+    </script>
+
+    <!-- Js for pruduct gallary -->
+    <script>
+        var productImg = document.getElementById("productImg");
+        var smallImg = document.getElementsByClassName("small-img");
+        smallImg[0].onclick = function(){
+            productImg.src = smallImg[0].src;
+        }
+        smallImg[1].onclick = function(){
+            productImg.src = smallImg[1].src;
+        }
+        smallImg[2].onclick = function(){
+            productImg.src = smallImg[2].src;
+        }
+        smallImg[3].onclick = function(){
+            productImg.src = smallImg[3].src;
+        }
+    </script>
+	<script>
+   var cartItems = [];
+  // Mảng để lưu trữ số lượng sản phẩm trong giỏ hàng
+  var cartItemQuantities = [];
+
+  // Hàm thêm sản phẩm vào giỏ hàng
+  function addToCart(productName) {
+    // Nếu sản phẩm đã tồn tại trong giỏ hàng, tăng số lượng thêm 1
+    if (cartItems.includes(productName)) {
+      var index = cartItems.indexOf(productName);
+      cartItemQuantities[index]++;
+    } else {
+      // Ngược lại, thêm sản phẩm mới vào giỏ hàng
+      cartItems.push(productName);
+      cartItemQuantities.push(1);
+    }
+    var cartSize = 0;
+    for (var i = 0; i < cartItemQuantities.length; i++) {
+      cartSize += cartItemQuantities[i];
+    }
+    document.getElementById("cart-size").textContent = cartSize;
+  }
+
+  // Hàm hiển thị giỏ hàng
+  function renderCart() {
+    var cartList = document.getElementById("cart");
+    cartList.innerHTML = ""; // Xóa nội dung giỏ hàng cũ
+
+    // Thêm từng mục sản phẩm vào giỏ hàng
+    for (var i = 0; i < cartItems.length; i++) {
+      var cartItem = document.createElement("li");
+      cartItem.textContent = `${cartItems[i]} - $20 x ${cartItemQuantities[i]}`;
+      cartList.appendChild(cartItem);
+    }
+  }
+</script>
+</body>
+</html>
+
+
